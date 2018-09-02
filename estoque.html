@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="width=device-width">
+	<title>PROMETHEUS - Estoque</title>
+
+	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+
+    <!--Materialize CSS -->
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo">Prometheus</a>
+			<a href="#" data-activates="menu-mobile" class="button-collapse">
+				<i class="material-icons">menu</i>
+			</a>
+				<ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="prontuario.html">Prontuários</a></li>
+                    <li><a href="estoque.html">Estoque</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="login.html">Sair</a></li>
+				</div>
+			</ul>
+			<ul class="side-nav" id="menu-mobile">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="prontuario.html">Prontuários</a></li>
+                    <li><a href="estoque.html">Estoque</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="login.html">Sair</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="footer" align="right">Sistema de Integração de Processos Clínicos Cirúrgicos - Sfactory®</div>
+	<!--JQUERY-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>	
+	<!--Materialize JS-->
+	<script src="js/materialize.js"></script>
+	<script>
+		$(function(){
+			$(".button-collapse").sideNav();
+		})
+	</script>
+</body>
+</html>
