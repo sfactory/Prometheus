@@ -17,34 +17,35 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="home.html">Início</a>
+                    <a class="nav-link" href="home.html">Início<span class="sr-only">(página atual)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cadastro<span class="sr-only">(página atual)</span></a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cadastro</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Médico</a>
-                    <a class="dropdown-item" href="#">Técnico</a>
-                    <a class="dropdown-item" href="#">Paciente</a>
-                    <a class="dropdown-item" href="#">Maqueiro</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Medicamentos</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Prontuários</a>
-                <li class="nav-item active">
-                    <a class="nav-link" href="prontuario.html">Prontuários</a>
+                    <a class="dropdown-item" href="cadastro_medico.html">Médico</a>
+                    <a class="dropdown-item" href="cadastro_tecnico.html">Técnico</a>
+                    <a class="dropdown-item" href="cadastro_paciente.html">Paciente</a>
+                    <a class="dropdown-item" href="cadastro_maqueiro.html">Maqueiro</a>
+                </div>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Prontuários</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="prontuario_cadastro.html">Cadastro</a>
+                    <a class="dropdown-item" href="prontuario_consulta.html">Consulta</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="estoque.html">Estoque</a>
-                </li>                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Medicamentos</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="medicamentos_cadastro.html">Cadastro</a>
+                    <a class="dropdown-item" href="medicamentos_consulta.html">Consulta</a>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">Sobre</a>
-                </li>                   
+                </li>
                 </div>
-                </li>               
+                </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
