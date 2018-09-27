@@ -7,7 +7,6 @@
 
 	<!--bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -25,6 +24,7 @@
 	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cadastro</a>
 	        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 	          		<a class="dropdown-item" href="cadastro_medico.html">Médico</a>
+	          		<a class="dropdown-item" href="cadastro_enfermeiro.html">Enfermeiro</a>	          		
 	          		<a class="dropdown-item" href="cadastro_tecnico.html">Técnico</a>
 	          		<a class="dropdown-item" href="cadastro_paciente.html">Paciente</a>
 	          		<a class="dropdown-item" href="cadastro_maqueiro.html">Maqueiro</a>
@@ -55,7 +55,28 @@
 	  </div>
 	</nav>
 	<div id="main" class="container-fluid"></div>
-
+		<form action="medicamentos_cadastro">
+			<div>
+				<label for="nome">Nome: </label><br>
+				<input type="text" name="nome"/>
+			</div>
+			<div>
+				<label for="empresa">Produtora: </label><br>
+				<input type="text" name="produtora"/>
+			</div>
+			<div>
+				<label for="registro">Registro: </label><br>
+				<input type="text" name="registro"/>
+			</div>
+			<div>
+				<label for="tarja">Tarja: </label><br>
+				<input type="text" name="tarja"/>
+			</div>
+			<div>
+				<label for="observacao">Observações: </label><br>
+				<input type="text" name="observacao">
+			</div>
+		</form>
 
 	<div class="footer" align="right">Sistema de Integração de Processos Clínicos Cirúrgicos - Sfactory®</div>
 	
