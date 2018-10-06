@@ -7,6 +7,51 @@
 
 	<!--bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<style>
+		.jumbotron {
+			background-color: #F9FAFB; 
+			margin-left: auto;
+			margin-right: auto;
+			width: 600px;
+			box-shadow: 2px 2px 5px;
+			margin-top: 25px;
+			
+		}
+		h1 {
+			text-align: center;
+			font-family: sans-serif;
+		}
+
+		body{
+			background-color: #6DC6C9;
+
+		}
+
+		.footer {
+			font-weight: bold;
+			background-color: #DDE5E5;
+			height: 50px;
+			padding-top: 15px;
+			padding-right: 10px;
+			position: relative;
+			bottom: 0px;
+			width: 100%;
+			left: 0px;
+		}
+		.container {
+			margin: 20px auto;
+			padding: 20px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.codigo{
+			width: 25%;
+		}
+
+
+	</style>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -55,28 +100,60 @@
 	  </div>
 	</nav>
 	<div id="main" class="container-fluid"></div>
-		<form action="medicamentos_cadastro">
-			<div>
-				<label for="nome">Nome: </label><br>
-				<input type="text" name="nome"/>
-			</div>
-			<div>
-				<label for="empresa">Produtora: </label><br>
-				<input type="text" name="produtora"/>
-			</div>
-			<div>
-				<label for="registro">Registro: </label><br>
-				<input type="text" name="registro"/>
-			</div>
-			<div>
-				<label for="tarja">Tarja: </label><br>
-				<input type="text" name="tarja"/>
-			</div>
-			<div>
-				<label for="observacao">Observações: </label><br>
-				<input type="text" name="observacao">
-			</div>
-		</form>
+
+		<section>
+		
+		<div class="jumbotron">
+			<h1>Cadastrar medicamentos</h1>
+				<br/>
+				<hr/>
+				<br/>
+					<form class="form-row">                  
+	                    
+	                    <div class="form-group col-sm-12">
+							<label for="codigo">Código</label><br>
+			                <input name="codigo" type="text" class="form-control codigo">
+		            	</div>
+	
+						<div class="form-group col-sm-6">
+			               	<label for="nomeComercial">Nome comercial</label><br>
+			                <input name="nomeComercial" type="text" class="form-control" placeholder="Nome comercial">
+		            	</div>
+
+						<div class="form-group col-sm-6">
+			                <label for="nomeQuimico">Nome químico</label><br>
+			                <input name="nomeQuimico" type="text" class="form-control" placeholder="Nome químico">
+		               	</div>
+
+						<div class="form-group col-sm-6">
+			                <label for="lab">Laboratório</label><br>
+			                <input name="lab" type="text" class="form-control" placeholder="Fabricante do medicamento">
+		            	</div>
+
+						<div class="form-group col-sm-6">
+			                <label for="forma">Forma farmaceutica</label><br>
+			                <input name="forma" type="text" class="form-control" placeholder="Ex: Frasco/Ampola">
+		            	</div>
+
+						<div class="form-group col-sm-6">
+							<label for="unidade">Unidade</label><br>
+			                <input name="unidade" type="text" class="form-control" placeholder="Unidade">
+		            	</div>
+
+						<div class="form-group col-sm-6">
+			                <label for="quantidade">Quantidade</label><br>
+			                <input name="quantidade" type="text" class="form-control" placeholder="Quantidade">
+		            	</div>
+
+						<div class="form-group col-sm-12">
+			                <label for="observacao">Observações</label><br>
+			                <textarea type="text" class="form-control"></textarea><br>
+		            	</div>
+
+		                <input type="submit" class="btn btn-primary btn-block" value="CADASTRAR">
+	            	</form>
+	    </div>
+    </section>
 
 	<div class="footer" align="right">Sistema de Integração de Processos Clínicos Cirúrgicos - Sfactory®</div>
 	

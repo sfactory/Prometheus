@@ -10,18 +10,27 @@
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
 	<style>
 		.jumbotron {
-			background-color: #F7F3F3; 
+			background-color: #F9FAFB; 
 			margin-left: auto;
 			margin-right: auto;
 			width: 600px;
+			box-shadow: 2px 2px 5px;
+			margin-top: 25px;
 			
 		}
-		h2 {
+
+		body{
+			background-color: #6DC6C9;
+
+		}
+
+		h1 {
 			text-align: center;
+			font-family: sans-serif;
 		}
 		.footer {
 			font-weight: bold;
-			background-color: #F7F3F3;
+			background-color: #DDE5E5;
 			height: 50px;
 			padding-top: 15px;
 			padding-right: 10px;
@@ -36,9 +45,7 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
-		label {
-			font-weight: bold;
-		}
+		
 		.drop {
 			width: 25%;
 		}
@@ -94,84 +101,112 @@
 	<section>
 		
 		<div class="jumbotron">
-			<h2>Cadastro Maqueiro</h2>
+			<h1>Cadastro Maqueiro</h1>
 
-				<br/><br/>
-					<form action="" method="post" id="validate">                  
+				<br/>
+				<hr/>
+				<br/>
+					<form class="form-row">                  
 	                    
-	                <label>* Nome</label>
-	                <input name="nome" type="text" class="form-control" placeholder="Digite seu nome">
+	                <div class="form-group col-sm-12">
+		                <label>* Nome</label>
+		                <input name="nome" type="text" class="form-control" placeholder="Digite seu nome">
+	            	</div>
 
-	                <label>* E-mail</label>
-	                <input name="email" type="text" class="form-control" placeholder="Digite seu e-mail">
+					<div class="form-group col-sm-12">
+		                <label>* E-mail</label>
+		                <input name="email" type="text" class="form-control" placeholder="Digite seu e-mail">
+	            	</div>
 
-	                <label>Telefone</label>
-	                <input name="" type="text" class="form-control" placeholder="Digite seu telefone" id="telefone">
+					<div class="form-group col-sm-6">
+		                <label>Telefone</label>
+		                <input name="" type="text" class="form-control" placeholder="Digite seu telefone" id="telefone">
+	            	</div>
 
-	                <label>Celular</label>
-	                <input name="" type="text" class="form-control" placeholder="Digite seu número de celular" id="celular">
+					<div class="form-group col-sm-6">
+		                <label>Celular</label>
+		                <input name="" type="text" class="form-control" placeholder="Digite seu número de celular" id="celular">
+	            	</div>
 
-	                <label>Data de Nascimento</label>
-	                <input name="" type="text" class="form-control" placeholder="Informe a data de nascimento" id="data">
-	              	<br/>
+					<div class="form-group col-sm-6">
+		                <label>Data de Nascimento</label>
+		                <input name="" type="text" class="form-control" placeholder="Informe a data de nascimento" id="data">
+	            	</div>
+	              	
+	              	<div class="form-group col-sm-6">
 	                <label>Sexo</label>
-	                <select name="" class="drop">
+	                <select name="" class="custom-select mr-sm-2">
 	                  <option>Selecione</option>
 	                  <option>Masculino</option>
 	                  <option>Feminino</option>
 	                </select>
-					<br/><br/>
-	                <label>CEP</label>
-	                <input name="" type="text" class="form-control" placeholder="Informe o CEP" id="cep">
+	            	</div>
+					
+					<div class="form-group col-sm-4">
+		                <label>CEP</label>
+		                <input name="" type="text" class="form-control" placeholder="Informe o CEP" id="cep">
+	            	</div>
 
-	                <label>Endereço</label>
-	                <input name="" type="text" placeholder="Infome o endereço" class="form-control">
+					<div class="form-group col-sm-8">
+		                <label>Endereço</label>
+		                <input name="" type="text" placeholder="Infome o endereço" class="form-control">
+	            	</div>
 	                
-	                <label>Número</label>
-	                <input name="" type="text" placeholder="Número" class="form-control" >
+	                <div class="form-group col-sm-4">
+		                <label>Número</label>
+		                <input name="" type="text" placeholder="Número" class="form-control" >
+	            	</div>
 	             
-	                <label>Complemento</label>
-	                <input name="" type="text" placeholder="Complemento" class="form-control">
+	             	<div class="form-group col-sm-8">
+		                <label>Complemento</label>
+		                <input name="" type="text" placeholder="Complemento" class="form-control">
+	            	</div>
 	                
-	                <label>Bairro</label>
-	                <input name="" type="text" placeholder=" Seu bairro" class="form-control">
+	                <div class="form-group col-sm-6">
+		                <label>Bairro</label>
+		                <input name="" type="text" placeholder="Infome o bairro" class="form-control">
+	            	</div>
 	                
-	                <label>Cidade</label>
-	                <input name="" type="text" placeholder="Sua cidade" class="form-control">
-					<br/>
-	                <label>Estado</label>
-	                <select name="" class="p">
-	                    <option>Selecione seu estado</option>
-	                    <option value="AC">Acre</option>
-	                    <option value="AL">Alagoas</option>
-	                    <option value="AP">Amapá</option>
-	                    <option value="AM">Amazonas</option>
-	                    <option value="BA">Bahia</option>
-	                    <option value="CE">Ceará</option>
-	                    <option value="DF">Distrito Federal</option>
-	                    <option value="ES">Espirito Santo</option>
-	                    <option value="GO">Goiás</option>
-	                    <option value="MA">Maranhão</option>
-	                    <option value="MS">Mato Grosso do Sul</option>
-	                    <option value="MT">Mato Grosso</option>
-	                    <option value="MG">Minas Gerais</option>
-	                    <option value="PA">Pará</option>
-	                    <option value="PB">Paraíba</option>
-	                    <option value="PR">Paraná</option>
-	                    <option value="PE">Pernambuco</option>
-	                    <option value="PI">Piauí</option>
-	                    <option value="RJ">Rio de Janeiro</option>
-	                    <option value="RN">Rio Grande do Norte</option>
-	                    <option value="RS">Rio Grande do Sul</option>
-	                    <option value="RO">Rondônia</option>
-	                    <option value="RR">Roraima</option>
-	                    <option value="SC">Santa Catarina</option>
-	                    <option value="SP">São Paulo</option>
-	                    <option value="SE">Sergipe</option>
-	                    <option value="TO">Tocantins</option>
-	                </select>
-	                <br/><br/>
-	                <input type="submit" class="btn btn-primary" value="Cadastrar">
+	                <div class="form-group col-sm-6">
+		                <label>Cidade</label>
+		                <input name="" type="text" placeholder="Informe a cidade" class="form-control">
+	            	</div>
+					
+					<div class="form-group col-sm-6">
+		                <label>Estado</label>
+		                <select name="" class="custom-select mr-sm-2">
+		                    <option>Selecione o estado</option>
+		                    <option value="AC">Acre</option>
+		                    <option value="AL">Alagoas</option>
+		                    <option value="AP">Amapá</option>
+		                    <option value="AM">Amazonas</option>
+		                    <option value="BA">Bahia</option>
+		                    <option value="CE">Ceará</option>
+		                    <option value="DF">Distrito Federal</option>
+		                    <option value="ES">Espirito Santo</option>
+		                    <option value="GO">Goiás</option>
+		                    <option value="MA">Maranhão</option>
+		                    <option value="MS">Mato Grosso do Sul</option>
+		                    <option value="MT">Mato Grosso</option>
+		                    <option value="MG">Minas Gerais</option>
+		                    <option value="PA">Pará</option>
+		                    <option value="PB">Paraíba</option>
+		                    <option value="PR">Paraná</option>
+		                    <option value="PE">Pernambuco</option>
+		                    <option value="PI">Piauí</option>
+		                    <option value="RJ">Rio de Janeiro</option>
+		                    <option value="RN">Rio Grande do Norte</option>
+		                    <option value="RS">Rio Grande do Sul</option>
+		                    <option value="RO">Rondônia</option>
+		                    <option value="RR">Roraima</option>
+		                    <option value="SC">Santa Catarina</option>
+		                    <option value="SP">São Paulo</option>
+		                    <option value="SE">Sergipe</option>
+		                    <option value="TO">Tocantins</option>
+		                </select>
+	            	</div>
+	                
+	                <input type="submit" class="btn btn-primary btn-block" value="CADASTRAR">
 	            </form>
 	        </div>
     </section>
