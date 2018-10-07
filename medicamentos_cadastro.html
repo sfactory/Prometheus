@@ -20,14 +20,15 @@
 		}
 		h1 {
 			text-align: center;
-			font-family: sans-serif;
+			font-family: 'Open Sans', sans-serif;
 		}
 
 		body{
-			background-color: #6DC6C9;
+			background-image: url(img/home.jpg);
+			background-size: 1366px auto;
 
 		}
-
+		
 		.footer {
 			font-weight: bold;
 			background-color: #DDE5E5;
@@ -101,14 +102,13 @@
 	</nav>
 	<div id="main" class="container-fluid"></div>
 
-		<section>
 		
 		<div class="jumbotron">
 			<h1>Cadastrar medicamentos</h1>
 				<br/>
 				<hr/>
 				<br/>
-					<form class="form-row">                  
+					<form action="valida.php" method="post" class="form-row">                  
 	                    
 	                    <div class="form-group col-sm-12">
 							<label for="codigo">Código</label><br>
@@ -153,7 +153,6 @@
 		                <input type="submit" class="btn btn-primary btn-block" value="CADASTRAR">
 	            	</form>
 	    </div>
-    </section>
 
 	<div class="footer" align="right">Sistema de Integração de Processos Clínicos Cirúrgicos - Sfactory®</div>
 	
