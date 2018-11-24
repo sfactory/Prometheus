@@ -103,6 +103,13 @@
 	    	</form>
 	  </div>
 	</nav>
+	<?php
+		
+		if( isset ($_POST['nome']) && empty ($_POST['nome'])){
+			alert('Preencha o campo nome');
+	}
+
+	?>
 	<div id="main" class="container-fluid"></div>
 		
 		<div class="jumbotron">
@@ -110,7 +117,7 @@
 			<br/>
 			<hr/>
 			<br/>
-					<form class="form-row">                  
+					<form method="post" action="" class="form-row">                  
 	                    
 	                <div class="form-group col-md-6">    
 					<label>* COREN</label>
